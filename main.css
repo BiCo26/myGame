@@ -1,0 +1,123 @@
+
+
+.container {
+    height: 100vh;
+    width: 161vh;
+    position: relative;
+    background-color: black;  
+}
+
+.font {
+    font-family: 'Orbitron', sans-serif;
+    color: yellow;
+}
+h1 {
+    
+    font-size: 50px;
+    left: 56.5vh;
+    bottom: 87vh;
+    position: absolute;
+}
+h2 {
+    
+    position: absolute;
+}
+.heading {
+    font-size: 24px;
+}
+.backdrop {
+    margin-top: 10vh;
+
+}
+#user {
+    background-image:url('assets/red.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 80vh;
+     float: left;
+}
+/*.backdrop {
+    
+}*/
+#pc {
+    background-image: url('assets/blue.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:90vh;
+    width: 80vh;
+    display: inline-block;
+
+}
+#enemyFont {
+    position: absolute;
+    left: 130vh;
+    top: 15vh;
+}
+#userFont {
+    position: absolute;
+    left: 3vh;
+    top: 15vh;
+}
+.weapons {
+    height: 18vh;
+    width: 18vh;
+    border: solid 10px;
+    display: inline-block;
+    top: 15vh;
+    left: 10vh;
+    
+}
+
+.weaponsPC {
+    height: 18vh;
+    width: 18vh;
+    border: solid 10px;
+    display: inline-block;
+    top: 15vh;
+    left: 10vh;
+    
+}
+
+#w1 {
+    background-image: url('./assets/weapon1.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+#w2 {
+    background-image:url('./assets/weapon2.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#w3 {
+    background-image: url('./assets/weapon3.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+/*.pcDisplay {
+    position: absolute;
+    height: 30vh;
+    width: 60vh;
+    border: solid 10px;
+    
+    top: 58vh;
+    left: 8vh;
+    background-color: yellow;
+    
+}*/
+
+.display {
+    position: relative;
+    height: 30vh;
+    width: 60vh;
+    border: solid 10px;
+    display: inline-block;
+    top: 28vh;
+    left: 10vh;
+    background-color: yellow;
+    
+}
