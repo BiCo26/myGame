@@ -1,8 +1,12 @@
 
+body{
+    margin: 0;
 
+}
 .container {
-    height: 100vh;
-    width: 161vh;
+    
+    height: 99vh;
+    width: 160vh;
     position: relative;
     background-color: black;  
 }
@@ -37,8 +41,7 @@ h2 {
     width: 80vh;
      float: left;
 }
-/*.backdrop {
-    
+/*.backdrop {   
 }*/
 #pc {
     background-image: url('assets/blue.jpg');
@@ -84,6 +87,7 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    padding-left: 20px;
     
 }
 #w2 {
@@ -118,6 +122,24 @@ h2 {
     display: inline-block;
     top: 28vh;
     left: 10vh;
-    background-color: yellow;
+    background-image: url('./assets/display.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#userDisplay {
     
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slideshowBox {
+    opacity: 0;
+    position: relative;
+    height: 30vh;
+    width: 40vh;
+    border: solid 20px red;
+    display: inline-block;
+    top: -60vh;
+    left: 50vh;
+    background-image: url('./assets/display.gif');
+    background-repeat: no-repeat;
 }
