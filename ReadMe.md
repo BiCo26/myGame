@@ -1,7 +1,8 @@
 # Space Games
 Is a type of rock, paper, scissors game.
 
-
+ 
+![Screenshot](./myGame/gameScreenshot.png)
 
 ## What is Space Games?
   This space themed rock, paper, scissors game using comet, nebula, rocket instead

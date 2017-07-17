@@ -68,7 +68,7 @@ function slotMachine() { //counter for next pic
 function checkWinner(){
 
     if (userSelection == pcSelection ){
-        alert('IT'S A TIE PLAY AGIAN!')
+        alert('ITS A TIE PLAY AGIAN!')
     
     
     } else if (userSelection == rock && pcSelection == paper){
