@@ -1,6 +1,7 @@
 
 body{
     margin: 0;
+    cursor: pointer;
 
 }
 .container {
@@ -54,12 +55,12 @@ h2 {
 }
 #enemyFont {
     position: absolute;
-    left: 130vh;
+    left: 120vh;
     top: 15vh;
 }
 #userFont {
     position: absolute;
-    left: 3vh;
+    left: 19vh;
     top: 15vh;
 }
 .weapons {
@@ -102,6 +103,26 @@ h2 {
     background-size: cover;
     position: relative;
 }
+#p1 {
+    background-image: url('./assets/weapon1.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-left: 20px;
+    
+}
+#p2 {
+    background-image:url('./assets/weapon2.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#p3 {
+    background-image: url('./assets/weapon3.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
 /*.pcDisplay {
     position: absolute;
     height: 30vh;
@@ -131,15 +152,31 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.slideshowBox {
-    opacity: 0;
-    position: relative;
-    height: 30vh;
-    width: 40vh;
-    border: solid 20px red;
+
+
+#userScore {
+    position: absolute;
+    height: 7vh;
+    width: 8vh;
+    border: groove 8px;
     display: inline-block;
-    top: -60vh;
-    left: 50vh;
-    background-image: url('./assets/display.gif');
-    background-repeat: no-repeat;
+    top: 13vh;
+    left: 4vh;
+    color : yellow;
+    font-size: 10px;
+    background-color: black;
 }
+
+#pcScore {
+    position: absolute;
+    height: 7vh;
+    width: 8vh;
+    border: groove 8px;
+    display: inline-block;
+    top: 13vh;
+    right: 5vh;
+    color : yellow;
+    font-size: 10px;
+    background-color: black;
+}
+
