@@ -35,7 +35,7 @@ window.onload = function() { // load buttons
     
 //countdown SLIDESHOW  &&randomizer
 
-function slotMachine() { //counter for next pic
+function slotMachine() { 
     let image0;
     let image1;
     var slideIndex=0;
@@ -45,8 +45,8 @@ function slotMachine() { //counter for next pic
 
     
         if(slideIndex <= 25 ){
-            image0 = Math.floor(Math.random()*3); //left display
-            image1 = Math.floor(Math.random()*3); //right display
+            image0 = Math.floor(Math.random()*3); //left user display
+            image1 = Math.floor(Math.random()*3); //right pc display
             pcSelection=image1;
             document.getElementById('userDisplay').style["background-image"]=`url('${myWeapon[image0]}')`
             document.getElementById('pcDisplay').style["background-image"]=`url('${myWeapon[image1]}')`
@@ -105,7 +105,7 @@ function checkWinner(){
     
     //SCORE looged via innerText to score div
 
-    if (userWin ==true && userWin == false) {
+    if (userWin ==true && pcWin == false) {
         //future usage: localStorage.setItem('userScore',userScore); //add USERS win to local storage
         userScore++;
         
@@ -121,10 +121,15 @@ function checkWinner(){
 
    if (userScore == 3){
        alert("YOU WON THE MATCH!")
+        userScore = 0;
+        pcScore = 0;
     }
    if (pcScore == 3){
        alert("You Lost the Match")
+       userScore = 0;
+        pcScore = 0; 
     }
+
    
 
     if(confirm('PLAY AGAIN!') == true) {

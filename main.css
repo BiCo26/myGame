@@ -18,14 +18,17 @@ body{
 }
 h1 {
     
-    font-size: 50px;
-    left: 56.5vh;
-    bottom: 87vh;
+    font-size: 80px;
+    left: 55vh;
+    bottom: 86vh;
     position: absolute;
+    text-shadow: 2px 2px blue;
 }
 h2 {
     
     position: absolute;
+    font-size: 50px;
+    text-shadow: 2px 2px red;
 }
 .heading {
     font-size: 24px;
@@ -70,7 +73,14 @@ h2 {
     display: inline-block;
     top: 15vh;
     left: 10vh;
-    
+}
+.weapons:hover{
+    height: 19vh;
+    width: 19vh;
+    border: solid 12px yellow;
+    display: inline-block;
+    top: 15vh;
+    left: 10vh;
 }
 
 .weaponsPC {
@@ -89,8 +99,8 @@ h2 {
     background-size: cover;
     position: relative;
     padding-left: 20px;
-    
 }
+
 #w2 {
     background-image:url('./assets/weapon2.gif');
     background-repeat: no-repeat;
@@ -163,7 +173,9 @@ h2 {
     top: 13vh;
     left: 4vh;
     color : yellow;
-    font-size: 10px;
+    font-size: 30px;
+    padding-left: 20px;
+    padding-top: 20px;
     background-color: black;
 }
 
@@ -176,7 +188,9 @@ h2 {
     top: 13vh;
     right: 5vh;
     color : yellow;
-    font-size: 10px;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 30px;
     background-color: black;
 }
 
