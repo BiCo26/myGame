@@ -6,18 +6,20 @@ body{
 }
 .container {
     
-    height: 99vh;
+    height: 102vh;
     width: 160vh;
     position: relative;
     background-color: black;  
 }
 
+#title {
+    left: 27%;
+}
 .font {
     font-family: 'Orbitron', sans-serif;
     color: yellow;
 }
 h1 {
-    
     font-size: 80px;
     left: 55vh;
     bottom: 86vh;
@@ -25,7 +27,6 @@ h1 {
     text-shadow: 2px 2px blue;
 }
 h2 {
-    
     position: absolute;
     font-size: 50px;
     text-shadow: 2px 2px red;
@@ -45,8 +46,7 @@ h2 {
     width: 80vh;
      float: left;
 }
-/*.backdrop {   
-}*/
+
 #pc {
     background-image: url('assets/blue.jpg');
     background-repeat: no-repeat;
@@ -158,11 +158,9 @@ h2 {
     background-size: cover;
 }
 #userDisplay {
-    
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 
 #userScore {
     position: absolute;

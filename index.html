@@ -1,60 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href = "../main.css">
-    <link rel='stylesheet' type='text/css' href='./main.css'>
-    <link href="https://fonts.googleapis.com/css?family=Orbitron:500,700" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href = "../main.css">
+        <link rel='stylesheet' type='text/css' href='./main.css'>
+        <link href="https://fonts.googleapis.com/css?family=Orbitron:500,700" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
-    <title>Space Games</title>
+        <title>Space Games</title>
 
-</head>
-<body>
-<div class = 'container'>
+    </head>
+    <body>
+        <div class = 'container'>
 
-    <h1 class = 'font' id = 'title'> SPACE GAMES </h1>
-<!-- USER -->
-    <h2 class = 'font' id = 'userFont'> Choose your weapon !  </h2>
-    <div class = 'backdrop' id = 'user'>
+            <h1 class = 'font' id = 'title'> SPACE GAMES </h1>
+        <!-- USER -->
+            <h2 class = 'font' id = 'userFont'> Choose your weapon !  </h2>
+            <div class = 'backdrop' id = 'user'>
 
-        <div class = 'uscore' id = 'userScore' style="color:yellow">SCORE</div><!--left -->
+                <div class = 'uscore' id = 'userScore' style="color:yellow">SCORE</div><!--left -->
 
 
-        <div class = 'weapons' id = 'w1' onclick = 'clickety()'></div>
-        <div class = 'weapons' id = 'w2'></div>
-        <div class = 'weapons' id = 'w3'></div>
+                <div class = 'weapons' id = 'w1' onclick = 'clickety()'></div>
+                <div class = 'weapons' id = 'w2'></div>
+                <div class = 'weapons' id = 'w3'></div>
+                
+                <div class = 'display' id = 'userDisplay'></div>
+
+            </div><!--end user -->
+
+        <!-- PC-->
+            <h2 class = 'font' id = 'enemyFont'> Enemy </h2>
+            <div class = 'backdrop' id = 'pc'>
+
+                <div class = 'pscore' id = 'pcScore' style="color:yellow">SCORE</div> <!-- right-->
         
-        <div class = 'display' id = 'userDisplay'></div>
+                <div class = 'weaponsPC' id = 'p3'></div>
+                <div class = 'weaponsPC' id = 'p2'></div>
+                <div class = 'weaponsPC' id = 'p1'></div>
+                
+                <div class = 'display' id = 'pcDisplay'></div>
 
-    </div><!--end user -->
+                
+                
+            </div> <!--end PC -->
 
-<!-- PC-->
-    <h2 class = 'font' id = 'enemyFont'> Enemy </h2>
-    <div class = 'backdrop' id = 'pc'>
-
-        <div class = 'pscore' id = 'pcScore' style="color:yellow">SCORE</div> <!-- right-->
-   
-        <div class = 'weaponsPC' id = 'p3'></div>
-        <div class = 'weaponsPC' id = 'p2'></div>
-        <div class = 'weaponsPC' id = 'p1'></div>
-        
-        <div class = 'display' id = 'pcDisplay'></div>
-
-        
-        
-    </div> <!--end PC -->
-
-    <audio id = 'boom'>
-        <source src = 'bombdrop.ogg' type = 'audio/ogg'>
-        <source src = 'bombdrop.mp3' type = 'audio/mp3'>
-    </audio>
+            <audio id = 'boom'>
+                <source src = 'bombdrop.ogg' type = 'audio/ogg'>
+                <source src = 'bombdrop.mp3' type = 'audio/mp3'>
+            </audio>
 
 
-</div><!--close container -->
+        </div><!--close container -->
 
-    <script src="./main.js"></script>
-</body>
+        <script src="./main.js"></script>
+    </body>
 </html>
