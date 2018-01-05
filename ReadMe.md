@@ -5,7 +5,7 @@ Is a type of rock, paper, scissors game.
 ![Screenshot](./myGame/assets/wireFrameSpaceGames.jpg)
 
 ## What is Space Games?
-  This space themed rock, paper, scissors game using comet, nebula, rocket instead
+  This space themed rock, paper, scissors game using comet, nebula, rocket instead.
 
 ## Technical Discussion
 
