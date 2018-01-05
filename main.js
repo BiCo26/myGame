@@ -56,7 +56,7 @@ function slotMachine() {
             clearInterval(setInt);
             document.getElementById('userDisplay').style["background-image"]=`url('${myWeapon[userSelection]}')`;            
             
-            setTimeout(checkWinner,3000)  
+            setTimeout(checkWinner,2800)  
         }
     
 }
@@ -123,14 +123,18 @@ function checkWinner(){
        alert("YOU WON THE MATCH!")
         userScore = 0;
         pcScore = 0;
+        
+        document.getElementById('pcScore').innerText= "0";
+        document.getElementById('userScore').innerText= "0";
     }
    if (pcScore == 3){
        alert("You Lost the Match")
        userScore = 0;
         pcScore = 0; 
-    }
 
-   
+        document.getElementById('pcScore').innerText= "0";
+        document.getElementById('userScore').innerText= "0";
+    }
 
     if(confirm('PLAY AGAIN!') == true) {
         document.getElementById('userDisplay').style["background-image"]=`url('./assets/display.gif')`
