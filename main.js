@@ -68,8 +68,7 @@ function slotMachine() {
 function checkWinner(){
 
     if (userSelection == pcSelection ){
-        alert('ITS A TIE PLAY AGIAN!')
-    
+        alert('ITS A TIE PLAY AGAIN!')
     
     } else if (userSelection == rock && pcSelection == paper){
         userWin = false;
@@ -103,7 +102,9 @@ function checkWinner(){
 
     }
     
-    //SCORE looged via innerText to score div
+}
+
+    //SCORE logged via innerText to score div
 
     if (userWin ==true && pcWin == false) {
         //future usage: localStorage.setItem('userScore',userScore); //add USERS win to local storage
@@ -116,6 +117,7 @@ function checkWinner(){
         pcScore++;
         document.getElementById('pcScore').innerText= (pcScore);
     }
+    
 
 ////FIRST TO 3 WINS
 
@@ -124,19 +126,17 @@ function checkWinner(){
         userScore = 0;
         pcScore = 0;
         
-        document.getElementById('pcScore').innerText= "0";
-        document.getElementById('userScore').innerText= "0";
+     scoreReset();
     }
    if (pcScore == 3){
-       alert("You Lost the Match")
+       alert("😢 You Lost the Match 💩")
        userScore = 0;
         pcScore = 0; 
 
-        document.getElementById('pcScore').innerText= "0";
-        document.getElementById('userScore').innerText= "0";
+        scoreReset();
     }
 
-    if(confirm('PLAY AGAIN!') == true) {
+    if(confirm('START') == true) {
         document.getElementById('userDisplay').style["background-image"]=`url('./assets/display.gif')`
         document.getElementById('pcDisplay').style["background-image"]=`url('./assets/display.gif')`
         
@@ -146,8 +146,12 @@ function checkWinner(){
         p=0;
         userWin = false;
         pcWin = false;
-        
-        
+           
+    }
+    function scoreReset() {
+
+        document.getElementById('pcScore').innerText= "0";
+        document.getElementById('userScore').innerText= "0";
     }
 }
 
